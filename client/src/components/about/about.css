@@ -1,0 +1,142 @@
+.about .banner-01 {
+    height: 60vh;
+    width: 100%;
+    background: url('../../img/img-09.jpg');
+    margin-top: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about .banner-01 h1 {
+    font-size: 4rem;
+    color: #fff;
+    background-color: #0c2c4c5f;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.about h3 {
+    padding: 1rem;
+    color: #0c2c4c;
+}
+
+.about h2 {
+    padding: 1rem 1rem 0;
+    color: #0c2c4c;
+}
+
+/* ------------------------  */
+.about-features {
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-feature-img {
+    width: 35%;
+}
+
+.about-feature-img img {
+    width: 100%;
+}
+
+.about-feature-text {
+    width: 50%;
+}
+
+.about-feature-text h2 {
+    font-size: 3rem;
+}
+
+.about-feature-text p {
+    padding: 1rem;
+    text-align: justify;
+    color: #777;
+}
+
+/* ++++++++++++++++ phone screen +++++++++++++++++++  */
+@media (min-width:280px) and (max-width:480px) {
+    .hide-in-small {
+        display: none;
+    }
+
+    .about .banner-01 {
+        margin-top: 10vh;
+        height: 95vh;
+    }
+
+    .about .banner-01 h1 {
+        font-size: 2rem;
+    }
+
+    .about .about-features {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about-feature-img {
+        width: 100%;
+    }
+
+    .about-feature-text {
+        width: 100%;
+    }
+
+    .about-feature-text h2 {
+        font-size: 2rem;
+    }
+}
+
+/* ++++++++++++++++ tablet screen +++++++++++++++++++  */
+@media (min-width:481px) and (max-width:768px) {
+    .hide-in-small {
+        display: none;
+    }
+
+    .about .banner-01 {
+        margin-top: 10vh;
+        height: 95vh;
+    }
+
+    .about .banner-01 h1 {
+        font-size: 3rem;
+    }
+
+    .about .about-features {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about-feature-img {
+        width: 70%;
+    }
+
+    .about-feature-text {
+        width: 100%;
+    }
+
+    .about-feature-text h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/* ++++++++++++++++++++++ for laptop screen ++++++++++++++++++++++ */
+@media (min-width:769px) and (max-width:1024px) {
+    .about-features {
+        padding: 2rem;
+    }
+
+    .about-feature-text {
+        width: 60%;
+    }
+    .about-feature-text h2{
+        font-size: 2rem;
+    }
+}

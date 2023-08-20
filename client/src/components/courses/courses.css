@@ -1,0 +1,81 @@
+.courses .banner-01 {
+    height: 80vh;
+    width: 100%;
+    background: url('../../img/img-03.jpg');
+    margin-top: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courses .banner-01 h1 {
+    font-size: 4rem;
+    color: #fff;
+    background-color: #0c2c4c5f;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.course {
+    min-width: 300px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+margin: 1rem;
+
+}
+
+.course h2{
+    text-align: center;
+    color: #0b345d;
+}
+.course ul{
+    padding-left: 2rem;
+    color: #777;
+}
+.course .btn-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 0;
+
+    & button{
+        padding: .3rem 1rem;
+        outline: none;
+        border: none;
+        background-color: #0b345d;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++  */
+@media (min-width:280px) and (max-width:600px) {
+    .courses .banner-01{
+        margin-top: 10vh;
+        height: 95vh;
+    }
+  .courses  .banner-01 h1{
+        font-size: 2rem;
+    }
+    .courses-list{
+        flex-direction: column;
+        padding: 0;
+    }
+    .course{
+        min-width: 260px;
+        margin: 1rem auto;
+    }
+}

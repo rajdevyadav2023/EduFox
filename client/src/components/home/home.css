@@ -1,0 +1,164 @@
+.home .banner-01{
+    height: 90vh;
+    width: 100%;
+    background: url('../../img/img-01.jpg');
+    margin-top: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.home .search-box{
+    
+    width: 60%;
+    background-color: #0c2c4c62;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.search-box input{
+    width: 85%;
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #777;
+}
+.search-box h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+.search-box button{
+    background-color: orangered;
+    color: white;
+    width: 15%;
+    height: 45px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ------------------------  */
+.features{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+.feature-img{
+    width: 35%;
+}
+.feature-img img{
+    width: 100%;
+}
+.feature-text{
+    width: 45%;
+}
+.feature-text h2{
+    color: #0c2c4c;
+    font-size: 3rem;
+}
+.feature-text p{
+    color: #777;
+    margin-top: 1rem;
+    text-align: justify;
+}
+/* ++++++++++++++++++++++++++ phone screen +++++++++++++++++++++++  */
+@media (min-width:280px) and (max-width:480px) {
+    .hide-in-small{
+        display: none;
+    }
+    .home .banner-01{
+        margin-top: 10vh;
+        height: 95vh;
+    }
+    .home .search-box{
+        width: 100%;
+        padding: .5rem;
+    }
+    .search-box input{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .search-box h1{
+        font-size: 1.5rem;
+    }
+    .search-box button{
+        width: 100%;
+        margin-top: .5rem;
+        border-radius: 5px;
+
+    }
+    .features{
+        flex-direction: column;
+        padding: 1rem;
+        height: auto;
+    }
+    .feature-img{
+        width: 100%;
+    }
+    .feature-text{
+        width: 100%;
+    }
+    .feature-text h2{
+        font-size: 1.5rem;
+    }
+    .feature-text p{
+        margin-top: .5rem;
+    }
+}
+/* ++++++++++++++++++++++++++ tablet  screen +++++++++++++++++++++++  */
+@media (min-width:481px) and (max-width:768px) {
+    
+    .home .banner-01{
+        margin-top: 10vh;
+        height: 95vh;
+    }
+    .home .search-box{
+        width: 100%;
+        padding: .5rem;
+        text-align: center;
+    }
+    .search-box input{
+        width: 70%;
+        border-radius: 5px;
+    }
+    .search-box h1{
+        font-size: 1.5rem;
+    }
+    .search-box button{
+        width: 70%;
+        margin-top: 1rem;
+        border-radius: 5px;
+
+    }
+    .features{
+        flex-direction: column;
+        padding: 1rem;
+        height: auto;
+    }
+    .feature-img{
+        width: 100%;
+        padding: 2rem;
+    }
+    .feature-text{
+        width: 100%;
+    }
+    .feature-text h2{
+        font-size: 2rem;
+    }
+    .feature-text p{
+        margin-top: .5rem;
+    }
+}
+
+/* ++++++++++++++++++++++++++ laptop  screen +++++++++++++++++++++++  */
+@media (min-width:769px) and (max-width:1024px) {
+.feature-text h2{
+    font-size: 2rem;
+}
+}

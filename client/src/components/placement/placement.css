@@ -1,0 +1,108 @@
+.placement .banner-01 {
+    height: 80vh;
+    width: 100%;
+    background: url('../../img/img-05.jpg');
+    margin-top: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.placement .banner-01 h1 {
+    font-size: 4rem;
+    color: #fff;
+    background-color: #0c2c4c5f;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.placement .companies-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.placement .company {
+    width: 350px;
+    padding: 1rem 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1rem auto;
+
+    & h2 {
+        color: #0b345d;
+        /* text-align: center; */
+    }
+
+    & small {
+        margin-bottom: .5rem;
+        color: #777;
+        display: inline-block;
+    }
+
+    & small i {
+        color: #0b345d;
+        /* margin-right: .5rem; */
+    }
+
+    & .btn-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    & button {
+        background-color: #0b345d;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        padding: .3rem .5rem;
+    }
+}
+
+.placement ul {
+    padding-left: 2rem;
+    list-style: none;
+
+    & li {
+        color: #777;
+    }
+
+    & i {
+        color: #0e650e;
+    }
+}
+
+/* ++++++++++++++++++++++++++++++++++++++  */
+@media (min-width:280px) and (max-width:600px) {
+    .placement .banner-01 {
+        margin-top: 10vh;
+        height: 95vh;
+    }
+
+    .placement .banner-01 h1 {
+        font-size: 2rem;
+    }
+    .placement .company{
+        width: 280px;
+        padding: 1rem;
+    }
+    .placement .btn-group{
+        flex-direction: column;
+    }
+    .companies-list button{
+        margin-top: .5rem;
+        width: 100%;
+    }
+    .placement ul{
+        padding-left: 0;
+    }
+}
