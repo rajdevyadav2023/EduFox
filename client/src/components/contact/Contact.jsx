@@ -23,7 +23,10 @@ const Contact = () => {
                     <p>EDUFOX Office No 6, 2nd Floor, C 4, Sector-63, Dwraka, Delhi. 201301</p>
                     </div>
                 </div>
-                <form action='https://formspree.io/f/mpzglzvj' method='POST' >
+
+                {/* add your own key after signing up on formspree.oi  */}
+                
+                <form action='https://formspree.io/f/<your-key/>' method='POST' >
                     <h2>Contact Form</h2>
                     <div className="form-control">
                         <label htmlFor="name">Name</label>
