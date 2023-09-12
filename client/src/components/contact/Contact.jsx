@@ -23,22 +23,22 @@ const Contact = () => {
                     <p>EDUFOX Office No 6, 2nd Floor, C 4, Sector-63, Dwraka, Delhi. 201301</p>
                     </div>
                 </div>
-                <form >
+                <form action='https://formspree.io/f/mpzglzvj' method='POST' >
                     <h2>Contact Form</h2>
                     <div className="form-control">
                         <label htmlFor="name">Name</label>
-                        <input type="text" name='name' id='name' placeholder='Enter Here' />
+                        <input type="text" name='name' id='name' placeholder='Enter Here' autoComplete='off' required />
                     </div>
                    
                     <div className="form-control">
                         <label htmlFor="phone">Phone No</label>
-                        <input type="tel" name='phone' id='phone' placeholder='Enter Here' />
+                        <input type="tel" name='phone' id='phone' placeholder='Enter Here' autoComplete='off' required />
                     </div>
 
                     <div className="form-control">
                         <label htmlFor="message">Message</label>
 
-                        <textarea name="message" id="message" placeholder='Write Your Message Here'></textarea>
+                        <textarea name="message" id="message" placeholder='Write Your Message Here' autoComplete='off' required></textarea>
                     </div>
 
                     <div className="btn-group">

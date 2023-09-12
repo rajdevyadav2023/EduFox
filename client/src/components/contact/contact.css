@@ -62,13 +62,16 @@ form h2 {
     color: #777;
     margin-top: .2rem;
     transition: all .5s ease;
-    box-shadow: 0px 0px 3px #ccccff;
+    /* box-shadow: 0px 0px 3px #ccccff; */
+    border: 1px solid #ddd;
+
 
 
 }
 
 .form-control input:focus {
-    box-shadow: 0px 0px 10px #ccccff;
+    /* box-shadow: 0px 0px 10px #ccccff; */
+    border: 2px solid #ddd;
 
 }
 
@@ -83,12 +86,14 @@ form h2 {
     margin-top: .2rem;
     color: #777;
     transition: all .5s ease;
-    box-shadow: 0px 0px 3px #ccccff;
+    /* box-shadow: 0px 0px 3px #ccccff; */
+    border: 1px solid #ddd;
 
 }
 
 .form-control textarea:focus {
-    box-shadow: 0px 0px 10px #ccccff;
+    /* box-shadow: 0px 0px 10px #ccccff; */
+    border: 2px solid #ddd;
 
 
 }

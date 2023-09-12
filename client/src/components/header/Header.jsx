@@ -39,13 +39,13 @@ const Header = () => {
                     <button onClick={()=>{setShow("true")}}><i className="fa-solid fa-bars"></i></button>
                     <ul id="small-navbar" style={{display: show?"block":"none"}}>
                         <button onClick={()=>{setShow(!show)}}><i className="fa-solid fa-xmark"></i></button>
-                    <li><NavLink to={'/'}>Home</NavLink></li>
-                    <li><NavLink to={'/courses'}>Courses</NavLink></li>
-                    <li><NavLink to={'/placement'}>Placement</NavLink></li>
+                    <li onClick={()=>{setShow(!show)}}><NavLink to={'/'}>Home</NavLink></li>
+                    <li onClick={()=>{setShow(!show)}}><NavLink to={'/courses'}>Courses</NavLink></li>
+                    <li onClick={()=>{setShow(!show)}}><NavLink to={'/placement'}>Placement</NavLink></li>
                   
-                    <li><NavLink to={'/about'}>About</NavLink></li>
+                    <li onClick={()=>{setShow(!show)}}><NavLink to={'/about'}>About</NavLink></li>
                    
-                    <li><NavLink to={'/contact'}>Contact Us</NavLink></li>
+                    <li onClick={()=>{setShow(!show)}}><NavLink to={'/contact'}>Contact Us</NavLink></li>
                 </ul>
                 </div>
             </nav>
